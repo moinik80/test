@@ -1,0 +1,221 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
+    margin: 0; /* Обнуляем отступы браузера */
+}
+
+h1
+{
+    font-size: 36px; /* Размер шрифта */
+    font-weight: bold; /* Жирное начертание */
+    margin: 0; /* Убираем отступы */
+    color: #fc6; /* Цвет текста */
+}
+
+#head /* Верхний блок */
+{
+    background: #0080c0; /* Цвет фона */
+    padding: 10px; /* Поля вокруг */
+    position: fixed; /* Фиксированное положение */
+    left: 0; top: 0; /* Левый нижний угол */
+    width: 100%; /* Ширина слоя */
+}
+
+#head span
+{
+    font-size: 12px; /* Размер шрифта */
+    font-weight: bold; /* Жирное начертание */
+    margin: 0; /* Убираем отступы */
+    color: #fc6; /* Цвет текста */
+    vertical-align: bottom;
+    float: right;
+    margin-right: 25px;
+}
+
+#head span a
+{
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: #fc6;
+}
+
+#foot /* Нижний блок */
+{
+    background: #333; /* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    clear: both; /* Отменяем обтекание */
+    position: fixed !important; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    width: 100%; /* Ширина слоя */
+}
+
+#login /*вход на сайт*/
+{
+    margin: 20px 10px 0px 10px; /* Значения отступов */
+    position:relative;
+    top:50px;
+}
+
+#login form
+{
+    width:230px;
+}
+
+#login div
+{
+    padding:10px;
+}
+
+#login input
+{
+    margin:2px;
+}
+
+#login_submit
+{
+    margin-top: 5px;
+}
+
+#login h5
+{
+    color: red;
+}
+
+#user
+{
+    position: fixed;
+    font-size: 10px; /* Размер шрифта */
+    font-weight: bold; /* Жирное начертание */
+    margin: 10px 10px 0px 10px; /* Значения отступов */
+    right: 0px;
+    top: 75px;
+    text-align: right;
+}
+
+/*#page *//*в нем размещается меню, контент*/
+/*{*/
+    /*position:relative;*/
+    /*top:90px; *//* отступ сверху от края */
+/*}*/
+
+/*#page div*/
+/*{*/
+    /*position: absolute;*/
+/*}*/
+
+#menu /* Левая колонка */
+{
+    position: absolute;
+    top:90px;
+    border: 1px solid #333; /* Параметры рамки вокруг */
+    width: 200px; /* Ширина колонки */
+    padding: 5px; /* Поля вокруг текста */
+    margin: 5px; /* Значения отступов */
+}
+
+#menu button
+{
+    width: 95%;
+    margin: 5px;
+}
+
+#menu a
+{
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+#content  /*Центральная колонка*/
+ {
+    position: absolute;
+    top:90px;
+    width: 70%;
+    margin: 10px; /*Значения отступов */
+    padding: 5px; /* Поля вокруг текста */
+    left: 220px; /* отступ слева от края */
+    text-align: center;
+    /*overflow: auto; *//*полосы прокрутки при необходимости*/
+}
+
+#content div
+{
+    text-align: center;
+    width: 100%;
+    position: static;
+}
+
+#output
+{
+    margin-left: 30px;
+}
+
+#output a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.t_head
+{
+    background-color: cornflowerblue;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px;
+}
+
+.t_row
+{
+    font-size: 14px;
+    margin: 5px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.img_sort
+{
+    float: right;
+    background-color: cornflowerblue;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.t_row a
+{
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: black;
+    font-size: 14px;
+}
+
+.sort
+{
+    text-decoration: none;
+    color: black;
+}
+
+#pagination
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pagination input[type=text]
+{
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+#pagination select
+{
+    float: right;
+    font-size: 10px;
+}
+
+#pagination input h5
+{
+    font-size: 10px;
+}
+
+#pagination div
+{
+    height: 20px;
+}

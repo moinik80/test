@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+    <!--default page-->
+    <definition name="default" template="/WEB-INF/view/layouts/default.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/view/common/header.jsp"/>
+        <put-attribute name="login" value=""/>
+        <put-attribute name="menu" value=""/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/view/common/footer.jsp"/>
+    </definition>
+
+    <!--start page-->
+    <definition name="index" extends="default">
+        <put-attribute name="title" value="Введите, пожалуйста, пароль"/>
+        <put-attribute name="body" value="/WEB-INF/view/index/index.jsp"/>
+    </definition>
+
+    <!--page with list books-->
+    <definition name="books" extends="default">
+        <put-attribute name="title" value="Книги"/>
+        <put-attribute name="login" value="/WEB-INF/view/common/login.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/view/book/books.jsp"/>
+    </definition>
+
+    <!--page with book-->
+    <definition name="book" extends="default">
+        <put-attribute name="title" value="Книга"/>
+        <put-attribute name="login" value="/WEB-INF/view/common/login.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/view/book/book.jsp"/>
+    </definition>
+
+    <!--add book-->
+    <definition name="addBook" extends="default">
+        <put-attribute name="title" value="Добавить книгу"/>
+        <put-attribute name="login" value="/WEB-INF/view/common/login.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/view/book/addBook.jsp"/>
+    </definition>
+
+    <!--edit book-->
+    <definition name="editBook" extends="default">
+        <put-attribute name="title" value="Редактировать книгу"/>
+        <put-attribute name="login" value="/WEB-INF/view/common/login.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/view/book/editBook.jsp"/>
+    </definition>
+
+    <!--delet book-->
+    <definition name="delBook" extends="default">
+        <put-attribute name="title" value="Редактировать книгу"/>
+        <put-attribute name="login" value="/WEB-INF/view/common/login.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/view/book/delBook.jsp"/>
+    </definition>
+
+    <!--page after authorisation-->
+    <definition name="welcome" extends="default">
+        <put-attribute name="title" value="Добро пожаловать"/>
+        <put-attribute name="login" value="/WEB-INF/view/common/login.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/view/welcome/welcome.jsp"/>
+    </definition>
+
+    <!--page with list authors-->
+    <definition name="authors" extends="default">
+        <put-attribute name="title" value="Авторы"/>
+        <put-attribute name="login" value="/WEB-INF/view/common/login.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/view/book/authors.jsp"/>
+    </definition>
+
+    <!--page with list categories-->
+    <definition name="categories" extends="default">
+        <put-attribute name="title" value="Категории"/>
+        <put-attribute name="login" value="/WEB-INF/view/common/login.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/view/book/categories.jsp"/>
+    </definition>
+
+    <!--page with list users-->
+    <definition name="users" extends="default">
+        <put-attribute name="title" value="Пользователи"/>
+        <put-attribute name="login" value="/WEB-INF/view/common/login.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/view/person/users.jsp"/>
+    </definition>
+
+    <!--page with users profile-->
+    <definition name="profile" extends="default">
+        <put-attribute name="title" value="Профиль пользователя"/>
+        <put-attribute name="login" value="/WEB-INF/view/common/login.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/view/person/profile.jsp"/>
+    </definition>
+</tiles-definitions>

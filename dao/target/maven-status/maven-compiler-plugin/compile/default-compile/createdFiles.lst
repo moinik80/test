@@ -1,0 +1,11 @@
+by\jd2\library\dao\ICategoryDao.class
+by\jd2\library\pojos\Book.class
+by\jd2\library\dao\BookDao.class
+by\jd2\library\dao\CategoryDao.class
+by\jd2\library\dao\IBookDao.class
+by\jd2\library\pojos\Category.class
+by\jd2\library\dao\BaseDao.class
+by\jd2\library\dao\Dao.class
+by\jd2\library\pojos\Person.class
+by\jd2\library\dao\PersonDao.class
+by\jd2\library\dao\IPersonDao.class
