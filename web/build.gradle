@@ -1,0 +1,7 @@
+apply plugin: 'war'
+
+description = 'web'
+dependencies {
+	compile project(':services')
+  	compile(group: 'javax.servlet', name: 'servlet-api', version:'2.5')
+}

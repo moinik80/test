@@ -17,7 +17,7 @@
         <mvc.version>1.0</mvc.version>
     </properties>
 
-    <dependencies>
+    <dependencies>	
         <dependency>
             <groupId>by.jd2.library</groupId>
             <artifactId>services</artifactId>

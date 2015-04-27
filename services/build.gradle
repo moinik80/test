@@ -1,0 +1,4 @@
+description = 'services'
+dependencies {
+  	compile project(':dao')
+}
